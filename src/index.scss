@@ -1,0 +1,79 @@
+$font-stack: "Karla", sans-serif;
+$primary-color: #333;
+$accent-color: #8a30ff;
+
+body{
+  font: 100% $font-stack;
+  color: $primary-color;
+  background-color: white;
+  margin: 0;
+  
+}
+
+#wrapper{
+  margin: auto;
+  background-color:#000;
+  overflow-y:scroll;
+}
+
+
+main{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 2rem;
+  padding-bottom: 5rem;
+  height: 100vh;
+  // overflow-y: scroll;
+  box-sizing: border-box;
+  justify-content:end;
+  align-items: end;
+
+  background-image: url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-3.png), url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-2.png), url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
+}
+
+header{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  
+
+  a, a:visited, a:active{
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover{
+    color: $primary-color;
+  }
+
+  .header--title {
+    font-size: 1.25rem;
+    margin-right: auto;
+    margin-left: 2rem;
+  }
+
+  .header--subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 2rem;
+  }
+}
+
+
+
+footer{
+  bottom: 0;
+  justify-self: end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  position: absolute;
+}
